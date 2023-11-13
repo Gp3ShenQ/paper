@@ -1,0 +1,325 @@
+
+
+*
+  box-sizing: border-box
+  // border: solid 1px
+
+body,head
+  margin: 0
+  padding: 0
+
+
+.font
+  font-family: "Reggae One"
+.font1
+  font-family: "Mochiy Pop P One"
+  font-size: 60px
+.font2
+  font-family: "ZCOOL QingKe HuangYou"
+  font-size: 26px
+    font-weight: 600
+.font3
+  font-size: 26px
+.rotate
+  transform: rotate(90deg)
+
+@keyframes smooth
+  0%
+    bottom: 0
+  50%
+    bottom: 20px
+  100%
+    bottom: 0
+
+.pic-box
+  width: 100%
+  @media screen and (max-width: 1024px)
+    .index-text
+      font-size: 250px
+      top: 60%
+    .text
+      display: block
+    .int-left 
+      width: 100%
+      height: 50%
+      p
+        text-align: center
+      .int-top
+        margin: 0px
+      .int-title
+        margin-top: 0px
+      .int-text
+        padding: 0
+    .int-right
+      width: 100%
+      height: 50%
+      img
+        width: 150px
+        height: 150px
+    .end-area
+      display: block
+      .left-box 
+        // img
+          // height: 100%
+      .end-left 
+        width: 100%
+        height: 50%
+      .end-right
+        width: 100%
+        height: 50%
+      .end-text
+        &:nth-child(1)
+          font-size: 40px
+        &:nth-child(2)
+          font-size: 28px
+        
+
+  @media screen and (max-width: 768px)
+    .index-text
+      font-size: 200px
+      top: 70%
+    .text
+    .int-left 
+      height: 40%
+      .int-top
+        // font-size: 30px
+      .int-title
+        font-size: 22px
+      .int-text
+        font-size: 16px
+    .int-right
+      height: 50%
+      p
+        font-size: 16px
+  @media screen and (max-width: 576px)
+    .text-out
+      display: none
+    .text
+      padding: 20px
+    .int-right
+      .i-box
+      p
+        padding: 0 0 0 5px
+        font-size: 12px
+    .end-area
+      .end-text
+          &:nth-child(1)
+            font-size: 24px
+          &:nth-child(2)
+            font-size: 18px
+
+.pic-out 
+  width: 100%
+  height: 550vh
+.pic-inner
+  width: 100%
+.index-text
+  position: absolute
+  width: 100%
+  height: 100vh
+  z-index: 2
+  font-size: 300px  
+  color: transparent
+  background-clip: text
+  background-image: url("./img/fontcolor.png")
+  top: 50%
+  left: 50%
+  transform: translate(-50% , -50%)
+  p
+    margin-top: 0
+    height: 0 
+    text-align: center
+
+.text-out 
+  position: absolute
+  display: flex
+  justify-content: space-around
+  z-index: 2
+  width: 100%
+  height: 100vh
+  top: 50%
+  left: 50%
+  transform: translate(-50% , -50%)
+.text-img
+  position: relative
+  width: 400px
+  height: 100%
+  img
+    width: 100%
+    height: 100%
+.scroll-down 
+  display: none
+  position: absolute
+  z-index: 2 
+  left: 50%
+  bottom: 0
+  line-height: 0
+  transform: translateX(-50%)
+  animation: smooth 1s infinite
+  p
+    font-size: 30px
+    &:nth-child(2)
+      margin-top: -15px
+      transform: rotate(-90deg)
+
+.pic
+  position: sticky
+  background-image: url("./img/bgc.png")
+  width: 100%  
+  height: 100vh
+  overflow: hidden
+  top: 0
+.mountain
+  position: absolute
+  width: 100%
+  height: 100%
+  transition-duration: .5s
+  img
+    width: 100%
+    height: 100%
+  &:nth-child(10)
+    top: 100%
+    z-index: 1
+  &:nth-child(9)
+    top: 100%
+    z-index: 2
+  &:nth-child(8)
+    top: 100%
+    z-index: 3
+  &:nth-child(7)
+    top: 100%
+    z-index: 4
+  &:nth-child(6)
+    top: 100%
+    z-index: 5
+  &:nth-child(5)
+    top: 100%
+    z-index: 6
+  &:nth-child(4)
+    top: 100%
+    z-index: 7
+  &:nth-child(3)
+    top: 100%
+    z-index: 8
+  &:nth-child(2)
+    top: 100%
+    z-index: 9
+  &:nth-child(1)
+    top: 100%
+    z-index: 10
+
+.introduce-area
+  position: relative
+  width: 100%
+  height: 100vh
+  margin-top: -20px
+  border: solid 1px
+.bgimg
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 0.1
+  img
+    width: 100%
+    height: 100%
+.text
+  display: flex
+  width: 100%
+  height: 100%
+  padding: 50px
+.int-left 
+  position: relative
+  z-index: 1
+  width: 50%
+  height: 100%
+  .int-top 
+    margin-top: 250px
+  .int-title
+    font-size: 36px
+    color: #d50000
+  .int-text
+    padding-right: 100px
+.int-right 
+  display: block
+  width: 50%
+  height: 100%
+  z-index: 1
+  .i-box
+    position: relative
+    display: flex
+    align-items: center
+    width: 100% 
+    height: 50%
+  img 
+    position: relative
+    width: 250px
+    height: 250px
+    border-radius: 20px
+  p
+    width: 70%
+    margin: auto
+    font-size: 18px
+    font-weight: 700
+    padding: 20px
+
+.three-area 
+  position: relative
+  height: 450vh
+  background-image: url("./img/3boxbgimg2.png")
+  background-size: cover
+  background-position: center
+  z-index: 11
+  .three-bg
+    position: sticky
+    overflow: hidden
+    background-size: cover
+    width: 100%
+    height: 100vh
+    background-image: url("./img/3boxbgimg.png")
+    top: 0
+    z-index: .1
+  .three-house
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 100%
+    transition-duration: .5s
+    img
+      width: 100%
+      height: 100%
+    &:nth-child(1)
+      z-index: 5
+    &:nth-child(2)
+      z-index: 4
+    &:nth-child(3)
+      z-index: 3
+    &:nth-child(4)
+      z-index: 2
+
+.end-area
+  position: relative
+  display: flex
+  width: 100%
+  height: 100vh
+  .end-box
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+  .end-left
+    position: relative
+    width: 60%
+    height: 100%
+  .left-box
+    width: 100%
+    height: 100%
+  img
+    width: 100%
+    height: 100%
+
+  .end-right
+    position: relative
+    width: 40%
+    height: 100%
+    padding: 0 50px
+
