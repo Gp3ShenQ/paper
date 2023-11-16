@@ -6,10 +6,14 @@ html(lang="en")
     script(src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous")
     script(defer src="./index.js") 
     link(rel="stylesheet", href="./index.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+    link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
     title 紙雕
     link(link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@400;500;600;700&family=Jost:ital,wght@0,200;0,700;1,300;1,500&family=Klee+One&family=Lexend:wght@100&family=Ma+Shan+Zheng&family=Mochiy+Pop+P+One&family=Mooli&family=Reggae+One&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet")
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
 
   body 
 
@@ -53,11 +57,11 @@ html(lang="en")
         img(src="./img/bgc1.png", alt="")
       .text
         .int-left 
-          .int-top.font1 
+          .int-top.font1(data-aos="zoom-out")
             p 紙雕藝術家
-          .int-title.font2
+          .int-title.font2(data-aos="zoom-out")
             p 濃厚家鄉情懷 人文風格的創作取向
-          .int-text.font3
+          .int-text.font3(data-aos="zoom-in-right")
             p &emsp;&emsp;吳靜芳的紙雕作品很多都以故鄉嘉義作為藍圖，畫出自己童年的回憶和經歷，《十五暝》、《月亮出來了》等等都是代表作，刻畫熟悉的日式建築和人物，用懷舊褐色調充斥畫面，她的作品風格相較於他人，獨樹一幟、充滿濃厚的家鄉氣息。
         .int-right 
           .i-box
@@ -82,9 +86,54 @@ html(lang="en")
       .end-left 
         .left-box 
           img(src="./img/end1.jpg", alt="")
-      .end-right
+      .end-right(data-aos="fade-up" data-aos-anchor-placement="center-bottom")
         .end-text.font1
           p  自然神性為靈感的紙雕
         .end-text.font3
           p &emsp;&emsp;在一張張的白紙上細細雕出輪廓，層層疊起一座精巧迷人的掌上城市與森林，日本藝術家柴田あゆみ（Ayumi Shibata）用紙雕微觀人類生活的世界；她只運用純白色的紙，偶爾配上暖黃色的光線，來捕捉存在於自然與世界裡的神性，探討人類與環境之間微妙的聯繫。
-      .poj-show 
+    .poj-show
+      .text-top(data-aos="zoom-out-right")
+        p 柴田あゆみ的作品大多有著圓頂建築、洞穴般的森林以及盤旋在充滿樹木的城市上空的太陽等元素，這些風景並不是根據某個現有的景點所進行的延伸創作，而是柴田あゆみ心中對於未來地球樣貌的期望—一個人類與自然共存的世界。而紙雕中的光影，則被她形容為「陰陽」，紙張代表了「陰」，紙雕散投射出陰影，與白紙本身構成了「陽」，也就是無形的世界，「光代表了精神與生命，太陽升起並為世界注入了生命，我相信我的作品是可以觀察這個物質世界和可見世界的地方。」
+      .img-top 
+        img(src="./img/end3.jpg", alt="")(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0")
+        img(src="./img/end4.jpg", alt="")(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="0")
+        img(src="./img/end5.jpg", alt="")(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="900" data-aos-offset="0")
+      .text-middle(data-aos="zoom-out-right")
+        p 事實上，柴田あゆみ所挑選的創作材質，還有著更深的意義。在日語中，Kami (かみ)除了有「紙」的意思之外，還有「神」和「精神」的意思，而「白紙」在日本神道教中是個神聖的素材，「看不見的『Kami』精神存在於各種物體和事件、地點，以及我們的房子和身體，我利用我的技巧來表達我對『Kami』精神誕生於此的感謝，每件作品都是一個祈禱。」
+      .top-circle
+        .arrow 
+          p 點我看更多作品
+          p >
+    .next-page 
+      .swiper.mySwiper
+        .swiper-wrapper
+          .swiper-slide 
+            img(src="./img/send1.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send2.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send3.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send4.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send5.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send6.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send7.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send8.jpg", alt="")
+          .swiper-slide
+            img(src="./img/send9.jpg", alt="")
+        .swiper-pagination
+      .sw-bottom 
+        p 柴田あゆみ認為，白色的紙張如同陽光，而切割的過程如同陰影，在最終完成的作品中，光線與紙雕的作用就如同陰和陽、正與反。她會製作出小巧到可以放在手掌心上的紙雕書本，也會製作人能走進去的大型紙雕裝置，前者傳達了微觀世界，代表人類的世界與地球，後者則是宏觀的世界，存在於人類宇宙之外，未知的世界。
+    .bottom-area
+      .img-color 
+        p 參觀地址: 台中市北區興進路
+        p 連絡電話: 04-22334455
+        p 手機號碼: 0928-282828
+        p 相關網站: www.ddd.ww.tw
+    .end-end 
+      .text-end 
+        p ◎ShenQ設計

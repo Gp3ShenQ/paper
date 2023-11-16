@@ -33,6 +33,7 @@ body,head
 
 .pic-box
   width: 100%
+  overflow: heddin
   @media screen and (max-width: 1024px)
     .index-text
       font-size: 250px
@@ -316,10 +317,133 @@ body,head
   img
     width: 100%
     height: 100%
-
   .end-right
     position: relative
     width: 40%
     height: 100%
     padding: 0 50px
 
+.poj-show
+  position: relative
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  text-indent: 2em
+.text-top 
+  padding: 20px 50px
+  font-size: 22px
+.img-top
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: space-around
+  img
+    box-shadow: 10px 10px 10px 1px #605959
+    width: 20%
+.text-middle
+  font-size: 22px
+  padding: 20px 50px
+  text-indent: 2em
+.ago
+  position: absolute
+  right: 100px
+.top-circle
+  position: absolute
+  bottom: -26%
+  left: -10%
+  width: 120%
+  height: 300px
+  border-radius: 100%
+  box-shadow: 0 -20px 80px #d5d2d2
+  background-color: #d6d1d1b2
+  cursor: pointer
+
+  &.disnone
+    display: none
+    
+.arrow 
+  position: absolute
+  left: 50%
+  line-height: 50px
+  transform: translate(-50% , 50%) 
+  animation: arrowdown 1s infinite
+  opacity: .5
+  &:hover
+    opacity: 1
+  p
+    font-size: 30px 
+    font-weight: 700
+    &:nth-child(1)
+      padding-right: 18px
+      font-size: 20px
+    &:nth-child(2)
+      transform: rotate(90deg)
+@keyframes arrowdown
+  0%
+    top: -50%
+  50%
+    top: -40%
+  100%
+    top: -50%
+.next-page 
+  display: none
+  position: relative
+  width: 100%
+  height: 100vh  
+  background: #ffffff
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  font-size: 14px
+  color: #000
+  margin: 0
+  padding: 0
+  &.disblock
+    display: block
+.swiper
+  width: 70%
+  height: 70%
+.swiper-slide
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-size: 18px
+  background: #fff
+  img
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+.sw-bottom
+  font-size: 22px
+  padding: 20px 50px
+  text-indent: 2em
+.bottom-area
+  position: relative
+  width: 100%
+  height: 20vh
+  background-color: #d6d1d1b2
+  &.changecolor
+    background-color: #fff
+
+.img-color 
+  position: absolute
+  width: 100%
+  height: 100%
+  background-image: url("./img/sendbgimg.png")  
+  padding-top: 100px
+  display: flex
+  justify-content: space-around
+  p
+    font-size: 28px
+    font-weight: 700
+    letter-spacing: 2px
+.end-end 
+  width: 100%
+  height: 22px
+  background-color: #000
+.text-end
+  p
+    font-size: 14px
+    margin: 0
+    color: white
+    text-align: center
